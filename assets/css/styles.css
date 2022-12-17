@@ -12,18 +12,24 @@
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: rgb(0, 132, 255);
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
 }
-
+.combo{
+    display: flex;
+}
+.combo>img{
+    display: inline-block;
+    color: white;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 5px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -41,9 +47,9 @@
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+/* .topnav .icon {
     display: none;
-}
+} */
 
 header{
     background: url(../img/aboutme2.jpg) center / 100% 100% no-repeat;
@@ -84,11 +90,16 @@ main{
 
 }
 #misProyectos>p{
-    font-size: 2rem
+    font-size: 3rem;
+    -webkit-text-stroke-width: 1.7px;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-fill-color: #ffffff;
+    letter-spacing: 3px;
+    
 }
 #misProyectos>button{
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 2jrem;
     padding: 10px;
 }
 
@@ -120,10 +131,10 @@ main{
     margin: 0 40px;
     color: white;
 }
-.icon--git{
+.icon__git{
     animation-delay: 2s;
 }
-.icon--fb{
+.icon__fb{
     animation-delay: 3s;
 }
 
